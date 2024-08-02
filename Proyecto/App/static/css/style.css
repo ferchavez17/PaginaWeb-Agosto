@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fondo {
+    position: absolute;
+    margin-top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.fondo img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.encabezado{
+    /* Alto */
+    height: 70px; 
+    background: #7BB2AE; /* verde-azulado base */
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu{
+    /* Interlineado */
+  margin-right: 15px; 
+  line-height: 70px;
+}
+
+.menu a{
+    margin-right: 5px;
+    /* Color de Fuente */
+    color: #ffffff; 
+    font-family: Arial, Helvetica, sans-serif;
+    /* Quitamos linea de Decoración */
+    text-decoration: none;
+    /* Tamaño de la Fuente */
+    font-size: 18px;
+    font-weight: 500;
+}
+/* Hover ---> Al pasar con el mouse
+realiza una accion */
+.encabezado img:hover{
+
+    box-shadow:(1px 1px 1px #FFFFFF); /
+    
+}
+
+.menu a:hover{
+    border-bottom: 2px solid #e4b1ad; 
+}
+
+
+/* formulario registrar */
+  form {
+    display: flex; /* Formulario en flexbox */
+    flex-direction: column; /* Elementos en columna */
+    align-items: center; /* Elementos centrados horizontalmente */
+   
+  }
+  
+  form label {
+    margin-bottom: 10px; /* Espacio entre etiquetas y campos */
+  }
+  
+  form input, form textarea {
+    padding: 10px; /* Espacio entre el borde y el contenido */
+    margin-bottom: 20px; /* Espacio entre campos */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 5px; /* Esquinas redondeadas */
+  }
+  
+  form input[type="submit"] {
+    background-color: #7BB2AE; /* Botón verde */
+    color: #fff; /* Texto blanco */
+    padding: 10px 20px; /* Espacio entre el borde y el contenido */
+    border: none; /* Quita el borde */
+    border-radius: 5px; /* Esquinas redondeadas */
+    cursor: pointer; /* Cursor en forma de mano */
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #2f5755; /* Botón verde oscuro al pasar el cursor */
+  }
+
+
+/* estilos para sector nosotros */
+.tarjeta-presentacion {
+    display: flex;
+    display: inline-block;
+    flex-direction: column; /* Apila elementos verticalmente */
+    align-items: center;
+    padding: 18px;
+    border: 1px solid #F7F3DD; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #e4b1ad; 
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: -30px;
+    margin-bottom: 2%;
+    width: 380px; /* Ajusta el ancho de la tarjeta */
+}
+
+.imagen-presentacion {
+    width: 88%; /* Ajusta el ancho de la imagen */
+    height: auto;  /* Ajusta la altura automáticamente */
+    margin-bottom: -10px; /* Espacio entre la imagen y el texto */
+    margin-left: 30px;
+}
+
+.imagen-presentacion2 {
+    width: 92%; /* Ajusta el ancho de la imagen */
+    height: auto;  /* Ajusta la altura automáticamente */
+    margin-bottom: -35px; /* Espacio entre la imagen y el texto */
+    margin-left: 28px;
+}
+
+.imagen-presentacion3 {
+    width: 97%; /* Ajusta el ancho de la imagen */
+    height: auto;  /* Ajusta la altura automáticamente */
+    margin-bottom: -35px; /* Espacio entre la imagen y el texto */
+    margin-left: 10px;
+}
+
+.texto-presentacion {
+    text-align: center; /* Centrar el texto */
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #000000; 
+}
+
+/* sector Recuerdos */
+.image-containerr {
+    text-align: center; /* Centra el contenido */
+  }
+  
+  .image-containerr img {
+    display: inline-block; /* Muestra las imágenes en línea */
+    width: 30%; /* Establece el ancho de cada imagen */
+    margin: 10px; /* Agrega un margen entre imágenes */
+    border-radius: 10px; /* Agrega un borde redondeado */
+    box-shadow: 0 0 40px #e4b1ad; /* Agrega una sombra */
+  }
+
+.tituloo{
+    text-align: center; 
+    font-size: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+
+/* sector "algo de mi" */
+.galeria{
+    width: 100%;
+    height: 660px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    margin-top: 4;
+}
+.imagen{
+    width: 20%;
+    height: 660px;
+    /* todo lo que sobresale se elimina */
+    overflow: hidden;
+    position: relative;
+}
+
+.imagen img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.titulooo{
+    text-align: center; 
+    font-size: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}

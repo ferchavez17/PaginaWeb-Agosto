@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header class="encabezado">
+        <img src="{% static 'img/icono.png' %}"   alt="Logo" title="Home">
+        <ul class="menu">
+            <a href="{% url 'Inicio' %}">Inicio</a>
+            <a href="{% url 'Nosotros' %}">Nosotros</a>
+            <a href="{% url 'Registrar' %}">Registrar</a>
+            <a href="{% url 'Acerca' %}">Acerca de mi</a>
+             <!-- <a href="">Galeria</a>
+            <a href="">Consultar</a>
+            <a href="">Productos</a> -->
+        </ul>   
+    </header>
+
+<div class="conte">
+  <div class="tarjeta-presentacion">
+    <img src="{% static 'img/mariposa.png' %}" alt="Tu imagen" class="imagen-presentacion">
+    <p class="texto-presentacion">
+        Hola!! Soy Fernanda Chávez, tengo 18 años y nací un 15 de septiembre
+    <br>lo que me convierte en parte del signo Virgo. 
+      <br>Este signo refleja mi pasión por el perfeccionismo y la organización, 
+      <br>y también me identifica como parte de Ravenclaw.
+      
+    </p>
+  </div>
+  <div class="tarjeta-presentacion">
+    <img src="{% static 'img/sol.png' %}" alt="Tu imagen" class="imagen-presentacion2">
+    <p class="texto-presentacion">
+        <br>  Algunos datos randoms sobre mí:
+        <br> 🦋Mi animal espiritual es la mariposa.
+        <br> 🌙Mi signo lunar es Acuario.
+        <br> ✨Mi ascendente es Capricornio.
+        <br> ☀️Mi signo solar es Virgo.
+        <br> 🩷Mi color favorito es el rosa.
+        <br> 🎶Mi banda musical favorita es "QUEEN".
+        <br> 🎙️Mis ídolas son Tini y Taylor Swift.
+    </p>
+  </div>
+
+  <div class="tarjeta-presentacion">
+    <img src="{% static 'img/taylor2.png' %}" alt="Tu imagen" class="imagen-presentacion3">
+    <p class="texto-presentacion">
+      <br>El próximo año comienzo mis estudios para Mecánica Dental🦷 
+      <br>y Licenciada en Publicidad en la Universidad de Lomas de Zamora. 
+      <br>Con estos objetivos en mente, me imagino en cinco años 
+      <br>ya recibida y trabajando de lo que me gusta, poniendo en practica todo lo aprendido.
+    </p>
+  </div>
+  <div id="images">
+    <h2 class="tituloo">GALERIA DE RECUERDOS</h2>
+    <div class="image-containerr">
+        <img src="{% static 'img/amis.jpg' %}" alt="fernanda">
+        <img src="{% static 'img/fer.jpg' %}" alt="impares">
+        <img src="{% static 'img/gordos.jpg' %}" alt="gorditos">
+    </div>
+
+    <h2 class="titulooo">UN POCO DE MI</h2>
+    <section class="galeria">
+       
+            <div class="imagen">
+                <img src="{% static 'img/1.jpg' %}" alt="">
+            </div>
+
+            <div class="imagen">
+                <img src="{% static 'img/4.jpg' %}" alt="">
+            </div>
+
+            <div class="imagen">
+                <img src="{% static 'img/3.jpg' %}" alt="">
+            </div>
+
+            <div class="imagen">
+                <img src="{% static 'img/5.jpg' %}"alt="">
+            </div>
+
+            <div class="imagen">
+                <img src="{% static 'img/2.jpg' %}" alt="">
+            </div>
+           
+       </section>
+</div>  
+</div>
+</body>
+</html>

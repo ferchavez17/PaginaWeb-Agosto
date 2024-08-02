@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de Mi</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header class="encabezado">
+        <img src="{% static 'img/icono.png' %}"   alt="Logo" title="Home">
+        <ul class="menu">
+            <a href="{% url 'Inicio' %}">Inicio</a>
+            <a href="{% url 'Nosotros' %}">Nosotros</a>
+            <a href="{% url 'Registrar' %}">Registrar</a>
+            <a href="{% url 'Acerca' %}">Acerca de mi</a>
+             <!-- <a href="">Galeria</a>
+            <a href="">Consultar</a>
+            <a href="">Productos</a> -->
+        </ul>
+    </header>
+
+</body>
+</html>
